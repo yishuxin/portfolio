@@ -1,0 +1,51 @@
+$color-primary: #c2bf19;
+$font-color: #4e4b5c;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 6rem;
+  color: #4e4b5c;
+  background-color: #e4d6dc;
+}
+
+@mixin easeOut {
+  transition: all 0.5s ease-in-out;
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, -1px, 10px);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 2px, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, -4px, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
